@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GS1 Barcode Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+</head>
+<body>
+    <svg id="barcode"></svg>
+    <script>
+        JsBarcode("#barcode", "01000029275371171910200117", {
+            format: "CODE128",
+            displayValue: true,
+            lineColor: "#000",
+            width: 2,
+            height: 100,
+            textMargin: 0,
+            fontSize: 16,
+            background: "#ffffff"
+        });
+    </script>
+</body>
+</html>
